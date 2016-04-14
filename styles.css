@@ -1,4 +1,6 @@
 /* Basic reset */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,6 +13,15 @@
 /* Finally adding some IE9 fallbacks for gradients to finish things up */
 
 /* A nice BG gradient */
+#judul {
+	text-align: center;
+}
+#judul h1{
+	font-size: 30px;
+	color: #00A896;
+	font-family: Roboto;
+}
+
 html {
 	height: 100%;
 	background: white;
@@ -142,4 +153,14 @@ html {
 .top span.clear:active {
 	top: 4px;
 	box-shadow: 0px 0px #d3545d;
+}
+.survey {
+	color: #028090;
+	text-align: center;
+}
+.survey span{
+	display: inline-block;
+}
+.survey a{
+	text-decoration: none;
 }
