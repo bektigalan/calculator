@@ -1,35 +1,36 @@
-/* Basic reset */
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	
-	/* Better text styling */
 	font: bold 14px Arial, sans-serif;
-}
-
-/* Finally adding some IE9 fallbacks for gradients to finish things up */
-
-/* A nice BG gradient */
-#judul {
-	text-align: center;
-}
-#judul h1{
-	font-size: 30px;
-	color: #00A896;
-	font-family: Roboto;
 }
 
 html {
 	height: 100%;
 	background: white;
-	background: radial-gradient(circle, #fff 20%, #ccc);
 	background-size: cover;
 }
 
-/* Using box shadows to create 3D effects */
+#judul {
+	text-align: center;
+	text-transform: capitalize;
+	width: 700px;
+	height: auto;
+	margin: 10px auto;
+	padding: 20px 20px 9px;
+
+	background: #FF1654;
+	border-radius: 3px;
+	box-shadow: 0px 4px #A80000, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+#judul h1{
+	font-size: 30px;
+	color: #E4FDE1;
+	font-family: Roboto;
+}
+
 #calculator {
 	width: 325px;
 	height: auto;
@@ -43,12 +44,10 @@ html {
 	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Top portion */
 .top span.clear {
 	float: left;
 }
 
-/* Inset shadow on the screen to create indent */
 .top .screen {
 	height: 40px;
 	width: 212px;
@@ -70,10 +69,8 @@ html {
 	letter-spacing: 1px;
 }
 
-/* Clear floats */
 .keys, .top {overflow: hidden;}
 
-/* Applying same to the keys */
 .keys span, .top span.clear {
 	float: left;
 	position: relative;
@@ -94,15 +91,11 @@ html {
 	line-height: 36px;
 	text-align: center;
 	
-	/* prevent selection of text inside keys */
 	user-select: none;
 	
-	/* Smoothing out hover and active states using css3 transitions */
 	transition: all 0.2s ease;
 }
 
-/* Remove right margins from operator keys */
-/* style different type of keys (operators/evaluate/clear) differently */
 .keys span.operator {
 	background: #FFF0F5;
 	margin-right: 0;
@@ -120,7 +113,6 @@ html {
 	color: white;
 }
 
-/* Some hover effects */
 .keys span:hover {
 	background: #9c89f6;
 	box-shadow: 0px 4px #6b54d3;
@@ -139,7 +131,6 @@ html {
 	color: white;
 }
 
-/* Simulating "pressed" effect on active state of the keys by removing the box-shadow and moving the keys down a bit */
 .keys span:active {
 	box-shadow: 0px 0px #6b54d3;
 	top: 4px;
@@ -160,7 +151,11 @@ html {
 }
 .survey span{
 	display: inline-block;
+	width: auto;
+	height: auto;
+	margin: 10px auto;
 }
 .survey a{
 	text-decoration: none;
+	color: #FF1654;
 }
